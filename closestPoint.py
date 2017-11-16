@@ -1,7 +1,7 @@
 #CSci 127 Teaching Staff
 #October 2017
 #A template for a program that finds & marks closest point.
-#Modified by:  ADD YOUR NAME HERE
+#Modified by:  Yin
 
 import folium
 import pandas as pd
@@ -9,61 +9,26 @@ import pandas as pd
 
 
 def getData():
-     """
-     Asks the user for the name of the CSV and
-     Returns a dataframe of the contents.
-     """
-     
-     df = None #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################
-
+     df = None 
+     df = input("Enter a CSV file name:")
      return(df)
-
 def getColumnNames():
-     """
-     Asks the user for the exact name of the columns that
-     contains the latitude and longitude and
-     Returns those values as a tuple.
-     """
-
-     latName, lonName = "", "" #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################
-    
+     latName, lonName = "", "" 
+     latName = input("Enter column name for latitude:")
+     lonName = input("Enter column name for longitude:")
      return(latName,lonName)
- 
-
 def getLocale():
-     """
-     Asks the user for latitude and longitude of the user's current location and
-     Returns those floating points numbers.
-
-     """
-
-     lat, lon = 0.0,0.0      #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################   
-
+     lat, lon = 0.0,0.0 
+     lat = input("Enter current latitude:")
+     lon = input("Enter current longitude:")
      return(lat, lon)
-
 def computeDist(x1,y1,x2,y2):
      """
      Computes the squared distance between two points (x1,y1) and (x2,y2) and
      Returns (x1-x2)^2 + (y1-y2)^2
      """
-     d = 0.0   #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################
-
+     d = 0.0  
+     
      return(d)
 
 
